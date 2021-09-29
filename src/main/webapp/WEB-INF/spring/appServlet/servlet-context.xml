@@ -28,16 +28,12 @@
 			<!-- 적용 -->
 			<mapping path="/book/**"/>
 			<mapping path="/customer/**"/>
-			<mapping path="/order/**"/>
-			
-			<!-- 예외 -->
-			<exclude-mapping path="/order/info"/>
 			
 			<beans:bean class="kr.ac.kopo.util.UserInterceptor"/>
 		</interceptor>
 		<interceptor>
 			<mapping path="/order/**"/>
-			
+			<!-- 제외 -->
 			<exclude-mapping path="/order/info"/>
 			<beans:bean class="kr.ac.kopo.util.AdimInterceptor"/>
 		</interceptor>
