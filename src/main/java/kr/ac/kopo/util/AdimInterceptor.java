@@ -22,5 +22,4 @@ public class AdimInterceptor extends HandlerInterceptorAdapter {
 		
 		return false;
 	}
-	
 }
